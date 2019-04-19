@@ -1,2 +1,9 @@
-# TCSS360_Project
-Group project for class.
+# TCSS360 Barely Adequate 
+
+Members:  Gavin Montes
+          Kyle Bittner
+          Nicole Guobadia
+          Casey Hogan
+
+Group Email: inadequate@gmail.com
+
