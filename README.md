@@ -5,5 +5,5 @@ Members:  Gavin Montes
           Nicole Guobadia
           Casey Hogan
 
-Group Email: inadequate@gmail.com
+Group Email: inadequ8@gmail.com
 
