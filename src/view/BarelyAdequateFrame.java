@@ -4,33 +4,43 @@
 package view;
 
 import java.awt.BorderLayout;
-
-import javax.swing.JButton;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JFrame;
-import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
-
 /**
  * @author Gavin Montes
  *
  */
 public class BarelyAdequateFrame extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4191682030032203464L;
 	/** About button which creates a popup with relevant info */
-	JMenuItem myAbout;
-	/** The */
+	JMenuItem myAboutButton;
+	/** The menu bar that the about button is contained in. */
 	JMenuBar myMenuBar;
+	/** The About box itself that pops up when the about button is clicked. */
 	
 	public BarelyAdequateFrame() {
 		super();
-		this.setDefaultCloseOperation(super.EXIT_ON_CLOSE);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setSize(300, 300);
 		this.setLayout(new BorderLayout());
 		
 		myMenuBar = new JMenuBar();
-		myAbout = new JMenuItem("ABOUT");
-		myMenuBar.add(myAbout);
-		
+		myAboutButton = new JMenuItem("ABOUT");
+		myMenuBar.add(myAboutButton);
+		myAboutButton.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent theEvent) {
+				about aboutBox = new about();
+			}
+			
+		});
 		this.add(myMenuBar, BorderLayout.NORTH);
 		
 		this.setVisible(true);
