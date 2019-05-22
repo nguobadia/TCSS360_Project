@@ -25,27 +25,27 @@ public class about {
 	 * No need because calling program constructs, and constructor calls initialize()
 	 * -Gavin
 	 */
-//	public static void main(String[] args) {
-//		
-//		EventQueue.invokeLater(new Runnable() {
-//			
-//			public void run() {
-//				
-//				try {
-//					
-//					about window = new about();
-//					
-//					//window.frame.setVisible(true);
-//					
-//				} catch (Exception e) {
-//					
-//					e.printStackTrace();
-//					
-//				}
-//			}
-//		}
-//	);		
-//}
+	public static void main(String[] args) {
+		
+		EventQueue.invokeLater(new Runnable() {
+			
+			public void run() {
+				
+				try {
+					
+					about window = new about();
+					
+					//window.frame.setVisible(true);
+					
+				} catch (Exception e) {
+					
+					e.printStackTrace();
+					
+				}
+			}
+		}
+	);		
+}
 
 	/**Initialize frame*/
 	public about() {

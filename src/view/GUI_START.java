@@ -23,10 +23,10 @@ public class GUI_START {
 	private JFrame frame;
 	
 	/** Username enter field*/
-	private JTextField userField;
+	private JTextField nameField;
 	
 	/**password field*/ 
-	private JTextField passwordField;
+	private JTextField emailField;
 	
 	/**Project title field (my Projects tab*/
 	private JTextField titleField;
@@ -93,42 +93,50 @@ public class GUI_START {
 		
 		panel.setLayout(null);
 		
-		userField = new JTextField();
-		userField.addActionListener(new ActionListener() {
+		nameField = new JTextField();
+		nameField.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
 		
-		userField.setBounds(178, 131, 119, 20);
+		nameField.setBounds(178, 131, 119, 20);
 		
-		panel.add(userField);
+		panel.add(nameField);
 		
-		userField.setColumns(10);
+		nameField.setColumns(10);
 
-		passwordField = new JTextField();
-		passwordField.addActionListener(new ActionListener() {
+		emailField = new JTextField();
+		emailField.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
 		
-		passwordField.setBounds(178, 175, 119, 20);
+		emailField.setBounds(178, 175, 119, 20);
 		
-		panel.add(passwordField);
+		panel.add(emailField);
 		
-		passwordField.setColumns(10);
+		emailField.setColumns(10);
 		
-		JLabel lblUser = new JLabel("User:");
+		JLabel lblName = new JLabel("Name:");
 		
-		lblUser.setBounds(178, 117, 46, 14);
+		lblName.setBounds(178, 117, 46, 14);
 		
-		panel.add(lblUser);
+		panel.add(lblName);
 		
-		JLabel lblPassword = new JLabel("Password:");
+		JLabel lblEmail = new JLabel("Email:");
 		
-		lblPassword.setBounds(178, 162, 81, 14);
+		lblEmail.setBounds(178, 162, 81, 14);
 		
-		panel.add(lblPassword);
+		panel.add(lblEmail);
 		
+		JButton logInButton = new JButton("Log In");
+		logInButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		logInButton.setBounds(200, 220, 75, 20);
+		
+		panel.add(logInButton);
 		
 		//background image label icon.
 		JLabel bgrdHome = new JLabel("New label");
